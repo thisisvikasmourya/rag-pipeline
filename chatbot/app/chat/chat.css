@@ -14,7 +14,7 @@
 .chat-header {
   padding: 16px 24px;
   background: white;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e5e7eb;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -23,21 +23,19 @@
 
 .chat-header h1 {
   margin: 0;
-  font-size: 24px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #0084ff, #00d4ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
 }
 
 .selected-doc {
   margin-left: auto;
-  font-size: 14px;
+  font-size: 13px;
   color: #0084ff;
   padding: 6px 12px;
-  background: #e3f2fd;
-  border-radius: 8px;
+  background: #eff6ff;
+  border-radius: 6px;
+  border: 1px solid #bfdbfe;
 }
 
 .messages-container {
@@ -46,7 +44,7 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  background: #fafafa;
+  background: white;
 }
 
 .messages-container::-webkit-scrollbar {
@@ -58,12 +56,12 @@
 }
 
 .messages-container::-webkit-scrollbar-thumb {
-  background: #d0d0d0;
+  background: #d1d5db;
   border-radius: 4px;
 }
 
 .messages-container::-webkit-scrollbar-thumb:hover {
-  background: #999;
+  background: #9ca3af;
 }
 
 /* Empty state */
@@ -73,14 +71,14 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: #999;
-  font-size: 18px;
+  color: #9ca3af;
+  font-size: 16px;
   text-align: center;
 }
 
 @media (max-width: 1024px) {
   .chat-header h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .messages-container {
@@ -102,7 +100,7 @@
   }
 
   .chat-header h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .selected-doc {

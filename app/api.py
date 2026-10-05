@@ -81,7 +81,7 @@ app = FastAPI(
 # ====== CORS Middleware ======
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:8000"],
+    allow_origins=["http://localhost:3000", "http://localhost:8000","https://l2q5lc0l-3000.inc1.devtunnels.ms/chat"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
